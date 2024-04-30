@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini image slider</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button{
+            border: none;
+            outline: none;
+            background-color: #2F6C77;
+            color: white;
+            border-radius: 20px;
+            font-size: 1.4rem;
+            padding: 1% 2%;
+        }
+        .img-con img{
+            border: 8px ridge rgb(15, 175, 135);
+            transition: all 0.3s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-con">
+            <img src="images/bg-1.jpg" alt="nature" width="800" height="500">
+        </div>
+        <div class="buttons">
+            <button id="pre">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
